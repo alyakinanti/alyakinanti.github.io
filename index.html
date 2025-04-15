@@ -5,38 +5,242 @@
     <meta name ="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alya</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
-    <header>
 
+    <div class = "wrapper">
         <nav class ="navbar">
             <a href="#" class="nav-logo">
-                <h2 class="logo-text">♡</h2>
+                <h2 class="logo-text">Alya web♡</h2>
             </a>
 
-            <ul class ="nav-menu">
-                <li class ="nav-item">
-                    <a href="#" class = "nav-link">Home</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                  <a href="#Center" class="nav-link">Home</a>
+                  
                 </li>
-
-                <li class ="nav-item">
-                    <a href="#" class = "nav-link">About</a>
+                <li class="nav-item">
+                  <a href="#about" class="nav-link">About</a>
+                 
                 </li>
-
-                <li class ="nav-item">
-                    <a href="#" class = "nav-link">Categories</a>
+                <li class="nav-item">
+                  <a href="#Project" class="nav-link">Project</a>
+                  
                 </li>
-
-                <li class ="nav-item">
-                    <a href="#" class = "nav-link">Contacts</a>
+                <li class="nav-item">
+                  <a href="#Contacts" class="nav-link">Contacts</a>
+                  
                 </li>
-            </ul>
-    </nav>
+              </ul>
+        </nav>
 
-    </header>
+        <section id="Center" class="Center">
+            <h1>Welcome</h1>
+            <h2>to my website</h2>
+        </section>
+
+       
+
+    </div>
+
+
+    <!--About-->
+
+    <div class = "about-section" id = "about">
+        <div class = "section-content">
+            <div class="about-image-wrapper">
+                <img src="image/profile.jpeg" alt="About" class="about-image">
+            </div>
+            <div class="about-details">
+                <section id="Center" class="About">
+                <h2 class="section-title">About me</h2>
+                <p class="text">Hello semua! 
+                    perkenalkan nama saya Alya Kinanti, saya seorang mahasiswa universitas riau di fakultas teknik informatika.
+                    Web ini menunjukkan karya saya sebagai artist dan casual video editor.
+                    Terimakasih sudah explore ke website ini!
+                    Welcome to my website and enjoy your stay!</p>
+                    <p class="text">⸜(｡˃ ᵕ ˂ )⸝♡</p>
+                <div class="social-link-list">
+                    <a href="#" class="social-link-list"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+    <!--Projects-->
+
+   
+    <h1>Projects</h1>
+    <h2>Display karya saya!!</h2>
+
+  <div class="gallery" id = "Project">
+    <div class="gallery-item">
+      <img src="image/portfolio 1.png" alt="Project 1">
+      <div class="caption">Example 1</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="image/portfolio 2.png" alt="Project 2">
+      <div class="caption">Example 2</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="image/portfolio3.png" alt="Project 3">
+      <div class="caption">Example 3</div>
+    </div>
+
+    <div class="gallery-item">
+        <img src="image/portfolio4.png" alt="Project 3">
+        <div class="caption">Example 4</div>
+      </div>
+
+    <div class="gallery-item">
+        <img src="image/portfolio5.png" alt="Project 3">
+        <div class="caption">Example 5</div>
+    </div>
+
+    <div class="gallery-item">
+        <img src="image/portfolio 6.png" alt="Project 3">
+        <div class="caption">Example 6</div>
+    </div>
+
+    <div class="gallery-item">
+        <img src="image/portfolio7.png" alt="Project 3">
+        <div class="caption">Example 7</div>
+    </div>
+
+
+    <div class="gallery-item">
+    <video controls>
+        <source src="image/contoh video.mp4" type="video/mp4">
+      </video>
+      <div class="caption">Example 8</div>
+    </div>
+
+    <!-- Tambah lebih banyak item sesuai kebutuhan -->
+  </div>
+</div>
+
+<!--Blog-->
+
+<h1>Blog Post</h1>
+    <div class="post-container">
+        <div class="post-summary" onclick="togglePost('post1')">
+            <h3>Post 1</h3>
+            <p>Tugas : Laporan sistem multimedia</p>
+        </div>
+        <div class="post-summary" onclick="togglePost('post2')">
+            <h3>♡</h3>
+            <p>TBA</p>
+        </div>
+        <div class="post-summary" onclick="togglePost('post3')">
+            <h3>♡</h3>
+            <p>TBA</p>
+        </div>
+    </div>
+
+    <!-- Modal -->
+<div id="modal" class="modal-overlay" onclick="closeModal(event)">
+  <div class="modal-content" onclick="event.stopPropagation()">
+      <span class="close-button" onclick="closeModal(event)">&times;</span>
+      <div id="modal-body">
+          <!-- Konten post akan diisi via JavaScript -->
+      </div>
+  </div>
+</div>
+
+    <!-- Full Post -->
+    <script>
+     const posts = 
+    {
+      post1: 
+      {
+        title: "Tugas Laporan Sistem Multimedia",
+        content: `
+            <p>Sistem multimedia adalah suatu sistem yang dibuat untuk mengintegrasikan berbagai jenis media seperti 
+              teks, suara, video, gambar, dan animasi ke dalam satu kesatuan yang mampu menyampaikan informasi secara 
+              menarik, interaktif, dan komunikatif kepada para pengguna yang membutuhkan. 
+              Dalam proses pengembangannya, sistem multimedia melibatkan dua elemen penting, yaitu perangkat lunak dan perangkat keras, 
+              yang saling bekerja sama untuk mengolah dan menampilkan beragam jenis media.</p>
+              
+            <embed src="image/laporan.pdf" type="application/pdf" width="100%" height="500px" />
+        `
+      },
+      post2: 
+      {
+        title: "♡",
+        content: "..."
+      },
+      post3: 
+      {
+        title: "♡",
+        content: "..."
+      }
+};
+  
+      function togglePost(postId) {
+          const modal = document.getElementById("modal");
+          const modalBody = document.getElementById("modal-body");
+          const post = posts[postId];
+  
+          modalBody.innerHTML = `<h2>${post.title}</h2><p>${post.content}</p>`;
+          modal.style.display = "flex";
+      }
+  
+      function closeModal(event) {
+          document.getElementById("modal").style.display = "none";
+      }
+  </script>
+
+
+<!--Contacts-->
+   
+<div class = "Contacts-section">
+    <h1>Contacts</h1>
+   <h2>Feel free to contact me for any question</h2>
+   <h3>Email : aya.kitagawa.2020@gmail.com</h3>
+    <div class = "section-content" id = "Contacts">
+            <div class="social-link-list">
+                <a href="#" class="social-link-list"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+</div>
+
+
+<!-- Audio player -->
+<audio id="bg-music" loop>
+    <source src="image/Someone You Loved_by Lewis copy.mp3" type="audio/mpeg">
+    Browser Anda tidak mendukung audio.
+  </audio>
+
+  <!-- Tombol Musik -->
+  <button class="music-button" onclick="toggleMusic()" id="music-toggle">
+    <img src="image/musicButton.png" alt="Play" id="music-icon">
+  </button>
+
+  <script>
+    const music = document.getElementById("bg-music");
+    const icon = document.getElementById("music-icon");
+    let isPlaying = false;
+
+    function toggleMusic() {
+      if (isPlaying) {
+        music.pause();
+        icon.src = "image/musicButton.png";
+      } else {
+        music.play();
+        icon.src = "image/pauseButton.png";
+      }
+      isPlaying = !isPlaying;
+    }
+  </script>
+
+    
+
 </body>
-
-<h1>welcome semua, saya Alya Kinanti mahasiswa Universitas Riau prodi Teknik Informatika</h1>
 
 </html>
