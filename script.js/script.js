@@ -1,4 +1,5 @@
-function showExample(type) {
+function showExample(type) 
+{
     const exampleBox = document.getElementById("example");
     let content = "";
   
@@ -20,5 +21,7 @@ function showExample(type) {
     }
   
     exampleBox.innerHTML = content;
+
   }
+
   

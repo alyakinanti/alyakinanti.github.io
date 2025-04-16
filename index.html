@@ -123,7 +123,7 @@
 
     <div class="gallery-item">
     <video controls>
-        <source src="image/contoh video.mp4" type="video/mp4">
+        <source src="image/original.mp4" type="video/mp4">
       </video>
       <div class="caption">Example 8</div>
     </div>
@@ -139,16 +139,55 @@
         <div class="post-summary" onclick="togglePost('post1')">
             <h3>Post 1</h3>
             <p>Tugas : Laporan sistem multimedia</p>
-            <embed src="image/laporan.pdf" type="application/pdf" width="100%" height="200px" />
+            <img src="Blog/tugas.gif" alt="Animasi tugas" class="gif"  />
 
             <a href="image/laporan.pdf" download style="display: inline-block; margin-top: 10px; color: #007bff;">
               📥 Unduh PDF
           </a>
 
         </div>
+
+        <div class="post-summary" onclick="togglePost('post2')">
+          <h3>Post 2</h3>
+          <p>Elemen Text</p>
+          <img src="Blog/text.gif" alt="Animasi Text" class="gif"  />
+       
+      </div>
+
+      <div class="post-summary" onclick="togglePost('post3')">
+        <h3>Post 3</h3>
+        <p>Elemen Gambar</p>
+        <img src="Blog/image.gif" alt="Animasi image" width="100%" height="200px"  />
+      
+      </div>
+
+      <div class="post-summary" onclick="togglePost('post4')">
+        <h3>Post 4</h3>
+        <p>Elemen Audio</p>
+        <img src="Blog/audio.gif" alt="Animasi audio" width="100%" height="200px"  />
+      
+      </div>
+
+      <div class="post-summary" onclick="togglePost('post5')">
+        <h3>Post 5</h3>
+        <p>Elemen Video</p>
+        <img src="Blog/video.gif" alt="Animasi video" width="100%" height="200px"  />
+      
+      </div>
+
+      <div class="post-summary" onclick="togglePost('post6')">
+        <h3>Post 6</h3>
+        <p>Elemen Animasi</p>
+        <img src="Blog/animation.gif" alt="Animasi Animation"width="100%" height="200px"  />
+      
+      </div>
+
+
     </div>
 
-    <!-- Modal -->
+    
+
+<!-- Modal -->
 <div id="modal" class="modal-overlay" onclick="closeModal(event)">
   <div class="modal-content" onclick="event.stopPropagation()">
       <span class="close-button" onclick="closeModal(event)">&times;</span>
@@ -187,6 +226,270 @@
 
         `
       },
+
+      post2: 
+      {
+        title: "Text",
+        content: 
+        `
+          <p>Teks merupakan rangkaian kata yang disusun secara tertulis 
+         maupun lisan dengan tujuan untuk menyampaikan informasi, ide, atau pesan kepada pihak lain. </p>
+
+          <div class="Text">
+         <div class="text-links">
+
+
+          <div class="font-sample font1">Ini adalah font: Arial</div>
+          <div class="font-sample font2">Ini adalah font: Calibri</div>
+         <div class="font-sample font3">Ini adalah font: Times New Roman</div>
+          <div class="font-sample font4">Ini adalah font: Garamond</div>
+          <div class="font-sample font5">Ini adalah font: Comic Sans</div>
+          <div class="font-sample font6">Ini adalah font: Helvetica</div>
+         <div class="font-sample font7">Ini adalah font: Roboto</div>
+         <div class="font-sample font8">Ini adalah font: Georgia</div>
+         <div class="font-sample font9">Ini adalah font: Open Sans</div>
+         <div class="font-sample font10">Ini adalah font: Franklin Gothic</div>
+
+        `
+      },
+
+  post3: 
+  {
+    title: "Gambar",
+    content: 
+    `
+      <p>Gambar merupakan bentuk visual yang menggambarkan objek, gagasan, atau konsep,
+        yang dapat dibuat melalui berbagai metode seperti alat tulis, cat, kamera, atau aplikasi komputer.
+         Format - format images yang populer adalah :</p>
+
+          <div class="file-links">
+            <div class="file-card"><a href="Gambar/original.ARW" target="_blank">♡ RAW</a></div>
+            <div class="file-card"><a href="Gambar/1.jpeg" target="_blank">♡ JPEG</a></div>
+            <div class="file-card"><a href="Gambar/2.png" target="_blank">♡ PNG</a></div>
+            <div class="file-card"><a href="Gambar/3.gif" target="_blank">♡ GIF</a></div>
+            <div class="file-card"><a href="Gambar/4.psd" target="_blank">♡ PSD</a></div>
+            <div class="file-card"><a href="Gambar/5.tiff" target="_blank">♡ TIFF</a></div>
+            <div class="file-card"><a href="Gambar/7.pdf" target="_blank">♡ PDF</a></div>
+            <div class="file-card"><a href="Gambar/8.eps" target="_blank">♡ EPS</a></div>
+            <div class="file-card"><a href="Gambar/9.heif" target="_blank">♡ HEIF</a></div>
+            <div class="file-card"><a href="Gambar/10.svg" target="_blank">♡ SVG</a></div>
+          </div>
+
+        <p>Credits : https://www.signatureedits.com/free-raw-photos/
+        // @ryanbreitkreutz - @signatureeditsco DSC05627</p>
+    `
+  },
+
+  post4: 
+  {
+    title: "Audio",
+  content: 
+  `
+    <p>Audio Audio adalah gelombang suara 
+      yang timbul akibat getaran suatu objek, sehingga dapat didengar oleh telinga manusia. 
+    Ini adalah contoh format populer audio : </p>
+
+    <div class="audio-grid">
+  <div class="audio-button" onclick="toggleAudio(this)">
+    <img src="image/musicButton.png" alt="Play" class="icon" />
+    <audio src="audio/original.mp3"></audio>
+    <p class="audio-title">Mp3</p>
+  </div>
+
+  <div class="audio-button" onclick="toggleAudio(this)">
+    <img src="image/musicButton.png" alt="Play" class="icon" />
+    <audio src="audio/a.aac"></audio>
+    <p class="audio-title">AAC</p>
+  </div>
+
+  <div class="audio-button" onclick="toggleAudio(this)">
+    <img src="image/musicButton.png" alt="Play" class="icon" />
+    <audio src="audio/b.wav"></audio>
+    <p class="audio-title">WAV</p>
+  </div>
+
+  <div class="audio-button" onclick="toggleAudio(this)">
+    <img src="image/musicButton.png" alt="Play" class="icon" />
+    <audio src="audio/c.flac"></audio>
+    <p class="audio-title">FLAC</p>
+  </div>
+
+  <div class="audio-button" onclick="toggleAudio(this)">
+    <img src="image/musicButton.png" alt="Play" class="icon" />
+    <audio src="audio/d.m4a"></audio>
+    <p class="audio-title">ALAC</p>
+  </div>
+
+  <div class="audio-button" onclick="toggleAudio(this)">
+    <img src="image/musicButton.png" alt="Play" class="icon" />
+    <audio src="audio/e.ogg"></audio>
+    <p class="audio-title">OGG</p>
+  </div>
+
+  <div class="audio-button" onclick="toggleAudio(this)">
+    <img src="image/musicButton.png" alt="Play" class="icon" />
+    <audio src="audio/f.wma"></audio>
+    <p class="audio-title">WMA</p>
+  </div>
+
+  <div class="audio-button" onclick="toggleAudio(this)">
+    <img src="image/musicButton.png" alt="Play" class="icon" />
+    <audio src="audio/g.aiff"></audio>
+    <p class="audio-title">AIFF</p>
+  </div>
+
+  <div class="audio-button" onclick="toggleAudio(this)">
+    <img src="image/musicButton.png" alt="Play" class="icon" />
+    <audio src="audio/audio9.mp3"></audio>
+    <p class="audio-title">DSD</p>
+  </div>
+
+  <div class="audio-button" onclick="toggleAudio(this)">
+    <img src="image/musicButton.png" alt="Play" class="icon" />
+    <audio src="audio/audio10.mp3"></audio>
+    <p class="audio-title">Opus</p>
+  </div>
+</div>
+
+    <p>Bounce by Declan DP
+  License: https://license.declandp.info
+  Free Download / Stream: http://audiolibrary.com.co/declan-dp/bounce
+  Music promoted by Audio Library https://youtu.be/sDT7_f5nOtc</p>
+  `
+},
+
+  post5: {
+    title: "Video",
+    content: `
+      <p>Video merupakan media yang menyajikan kombinasi antara gambar bergerak dan suara secara bersamaan. 
+        Ini adalah contoh format populer video :</p>
+
+        <div class="Video">
+         <div class="video-card">
+          <h3>MP4</h3>
+          <video controls src="video/original.mp4"></video>
+        </div>
+
+    <div class="video-card">
+      <h3>MOV</h3>
+      <video controls src="video/01.mov"></video>
+    </div>
+
+    <div class="video-card">
+      <h3>AVI</h3>
+      <video controls src="video/02.avi"></video>
+    </div>
+
+    <div class="video-card">
+      <h3>MKV</h3>
+      <video controls src="video/03.mkv"></video>
+    </div>
+
+    <div class="video-card">
+      <h3>FLV</h3>
+      <video controls src="video/04.flv"></video>
+    </div>
+
+    <div class="video-card">
+      <h3>WMV</h3>
+      <video controls src="video/05.wmv"></video>
+    </div>
+
+    <div class="video-card">
+      <h3>WEBM</h3>
+      <video controls src="video/06.webm"></video>
+    </div>
+
+    <div class="video-card">
+      <h3>MPEG</h3>
+      <video controls src="video/07.mpeg"></video>
+    </div>
+
+    <div class="video-card">
+      <h3>3GP</h3>
+      <video controls src="video/08.3gp"></video>
+    </div>
+
+    <div class="video-card">
+      <h3>AVCHD</h3>
+      <video controls src="video/09.avchd.mts"></video>
+    </div>
+
+  </div>
+
+  <p>Video by Stephen Leonardi: https://www.pexels.com/video/busy-nightlife-street-in-rain-with-umbrellas-31365794/</p>
+    `
+  },
+
+  post6: 
+  {
+    title: "Animasi",
+    content: 
+    `
+    <p>Animasi adalah bentuk visual bergerak yang dihasilkan dari rangkaian gambar yang ditampilkan secara berurutan.
+      Ini adalah contoh teknik animasi :</p>
+
+    <div class="animasi-grid">
+        <div class="animasi-card">
+          <h3>2D</h3>
+          <video controls src="Animation/2D.mp4"></video>
+        </div>
+
+      <div class="animasi-card">
+          <h3>3D</h3>
+          <video controls src="Animation/3D.mp4"></video>
+      </div>
+
+     <div class="animasi-card">
+          <h3>Frame Animation</h3>
+         <video controls src="Animation/frame.mp4"></video>
+      </div>
+
+      <div class="animasi-card">
+          <h3>Traditional Animation</h3>
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/70NhEBzLKU8?si=TFpET6shRKDCkoMn" 
+        frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div class="animasi-card">
+          <h3>CGI</h3>
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/C5kOJNrU6wk?si=cRgXy6MZZ2kzgPnT" 
+        frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div class="animasi-card">
+          <h3>Stop Motion</h3>
+          <video controls src="Animation/StopMotion.mp4"></video>
+      </div>
+
+     <div class="animasi-card">
+         <h3>Anime</h3>
+          <video controls src="Animation/Anime.mp4"></video>
+      </div>
+
+      <div class="animasi-card">
+          <h3>Claymation</h3>
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/BQeI4i2Nzw8?si=hYYgV0qo2REMAJZf" 
+        frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div class="animasi-card">
+          <h3>Cut-Out Animation</h3>
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/zSCyDjwN5Nw?si=6JM_nJPWjDlGdfTe" 
+        frameborder="0" allowfullscreen></iframe>
+      </div>
+       </div>
+
+      <div class="animasi-card">
+          <h3>Whiteboard</h3>
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/1HcWhJy7mBU?si=5t3G5J4dhiSXnWQv" 
+        frameborder="0" allowfullscreen></iframe>
+      </div>
+      </div>
+  </div>
+  `
+  }
+
 };
   
       function togglePost(postId) {
@@ -201,7 +504,46 @@
       function closeModal(event) {
           document.getElementById("modal").style.display = "none";
       }
-  </script>
+
+  /*audio*/
+
+  let currentlyPlaying = null; // Simpan audio yang sedang bermain
+
+  function toggleAudio(button) {
+    const audio = button.querySelector("audio");
+    const icon = button.querySelector("img");
+    const isPlaying = !audio.paused;
+
+    // Kalau sedang main dan diklik tombol yang sama → pause
+    if (currentlyPlaying && currentlyPlaying !== audio) {
+      // Pause audio lain
+      currentlyPlaying.pause();
+      currentlyPlaying.currentTime = 0;
+      // Ganti ikon audio lain ke play
+      document.querySelectorAll('.audio-button').forEach(btn => {
+        if (btn.querySelector('audio') !== audio) {
+          btn.querySelector('img').src = 'image/musicButton.png';
+        }
+      });
+    }
+
+    if (isPlaying) {
+      audio.pause();
+      icon.src = "image/musicButton.png";
+      currentlyPlaying = null;
+    } else {
+      audio.play();
+      icon.src = "image/pauseButton.png";
+      currentlyPlaying = audio;
+    }
+
+    // Reset ikon jika audio selesai
+    audio.onended = () => {
+      icon.src = "image/musicButton.png";
+      currentlyPlaying = null;
+    };
+  }
+</script>
 
 
 <!--Contacts-->
