@@ -29,6 +29,12 @@
                   <a href="#Project" class="nav-link">Project</a>
                   
                 </li>
+
+                <li class="nav-item">
+                  <a href="#Blog" class="nav-link">Blog</a>
+                  
+                </li>
+
                 <li class="nav-item">
                   <a href="#Contacts" class="nav-link">Contacts</a>
                   
@@ -129,18 +135,16 @@
 <!--Blog-->
 
 <h1>Blog Post</h1>
-    <div class="post-container">
+    <div class="post-container" id = "Blog">
         <div class="post-summary" onclick="togglePost('post1')">
             <h3>Post 1</h3>
             <p>Tugas : Laporan sistem multimedia</p>
-        </div>
-        <div class="post-summary" onclick="togglePost('post2')">
-            <h3>♡</h3>
-            <p>TBA</p>
-        </div>
-        <div class="post-summary" onclick="togglePost('post3')">
-            <h3>♡</h3>
-            <p>TBA</p>
+            <embed src="image/laporan.pdf" type="application/pdf" width="100%" height="200px" />
+
+            <a href="image/laporan.pdf" download style="display: inline-block; margin-top: 10px; color: #007bff;">
+              📥 Unduh PDF
+          </a>
+
         </div>
     </div>
 
@@ -168,19 +172,21 @@
               Dalam proses pengembangannya, sistem multimedia melibatkan dua elemen penting, yaitu perangkat lunak dan perangkat keras, 
               yang saling bekerja sama untuk mengolah dan menampilkan beragam jenis media.</p>
               
-            <embed src="image/laporan.pdf" type="application/pdf" width="100%" height="500px" />
+            <embed src="image/laporan.pdf" type="application/pdf" width="100%" height="500px"/>
+
+             <p>Text : Teks merupakan rangkaian kata yang disusun secara tertulis maupun lisan dengan tujuan untuk menyampaikan 
+              informasi, ide, atau pesan kepada pihak lain.</p>
+               <p>Gambar : Gambar merupakan bentuk visual yang menggambarkan objek, gagasan, atau konsep, 
+                yang dapat dibuat melalui berbagai metode seperti alat tulis, cat, kamera, atau aplikasi komputer.</p>
+                <p>Audio : Audio adalah gelombang suara yang timbul akibat getaran suatu objek, sehingga dapat 
+                  didengar oleh telinga manusia.</p>
+               <p>Video : Video merupakan media yang menyajikan kombinasi 
+                antara gambar bergerak dan suara secara bersamaan.</p>
+                <p>Animasi : Animasi adalah bentuk visual bergerak yang dihasilkan 
+                  dari rangkaian gambar yang ditampilkan secara berurutan.</p>
+
         `
       },
-      post2: 
-      {
-        title: "♡",
-        content: "..."
-      },
-      post3: 
-      {
-        title: "♡",
-        content: "..."
-      }
 };
   
       function togglePost(postId) {
